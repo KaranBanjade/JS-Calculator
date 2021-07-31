@@ -1,0 +1,35 @@
+
+body{
+    background-color:lightblue;
+}
+.Main{
+    width: 30%;
+    height: 500px;
+    border: solid #000000 5px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color:rgba(144, 144, 144, 0.698);
+    border-radius: 5%;
+    margin: auto;
+    margin-top: 5%;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+.buttons{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+.buttons button{
+    margin: 2%;
+}
+/* To remove the annoying arrows/spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

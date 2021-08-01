@@ -5,6 +5,7 @@ let Add = document.getElementById("Add");
 let Minus = document.getElementById("Minus");
 let Product = document.getElementById("Product");
 let Divide = document.getElementById("Divide");
+let Clear = document.getElementById("Clear");
 
 let Out = document.querySelector("#Result");
 // Output.
@@ -16,7 +17,6 @@ function Get(){
     x = parseFloat(In1.value);
     y = parseFloat(In2.value);
 }
-   
 function add() {
     Get();
     Out.value = x+y;
@@ -34,6 +34,11 @@ function div(){
     Out.value = x/y;
 }
 
+Clear.addEventListener('click',()=>{
+    In1.value = "";
+    In2.value = "";
+    Out.value = "";
+})
 Add.addEventListener('click',add);
 Minus.addEventListener('click',sub);
 Product.addEventListener('click',mul);
